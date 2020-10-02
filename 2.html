@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("input:checkbox").click(function () {
+                
+                if($(this).is(':checked') == true){
+                    $(this).next().css("text-decoration","line-through");
+                }else{
+                    $(this).next().css("text-decoration","none");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <input type='checkbox' id='input1'>
+        <label for="input">Chicken</label>
+        <br>
+        <input type='checkbox' id="input2">
+        <label for="input1">222</label>
+    </div>
+</body>
+
+</html>
